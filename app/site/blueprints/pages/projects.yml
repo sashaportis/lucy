@@ -1,0 +1,9 @@
+title: Projects
+preset: page
+pages: true
+  template: project
+fields:
+  info:
+    type: info
+    text: |
+      This is the readme for {{page.title}}.

@@ -1,0 +1,10 @@
+title: Paths
+
+columns:
+  - width: 3/3
+    sections:
+      # a list of subpages
+      pages:
+        type: pages
+        headline: Paths
+        template: path

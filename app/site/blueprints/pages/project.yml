@@ -1,0 +1,54 @@
+title: Project
+tabs:
+  ProjectThumbnail:
+    label: Project Thumbnail
+    preset: page
+    pages: false
+    fields:
+      projectThumb:
+        label: Project Thumbmail
+        type: files
+        width: 1/2
+        multiple: false
+      projectYear:
+        label: Project Year
+        type: text
+        width: 1/2
+      projectLocation:
+        label: Project Location
+        type: textarea
+        buttons: false
+        width: 1/2
+        help: If PAGE is an EXHIBITION then add LOCATION.
+      projectMaterials:
+        label: Project Materials
+        type: textarea
+        buttons: false
+        width: 1/2
+        help: If PAGE is a WORK then add MATERIALS.
+
+  ProjectInformation:
+    label: Project Information
+    preset: page
+    pages: false
+    fields:
+      introText:
+        label: Intro Text
+        type: textarea
+        size: small
+        help: This is for project information besides the title, for example <br>Grimm Gallery<br> 12 January – 25 February 2017<br> Amsterdam, The Netherlands
+      text:
+        label: Project Text
+        type: textarea
+        size: medium
+        help: This is for the project text after the project images.
+  
+  Gallery:
+    label: Gallery
+    preset: page
+    pages: false
+    fields:
+      galleryitems:
+        type: files
+        query: page.images
+        layout: cards

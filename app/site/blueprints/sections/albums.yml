@@ -1,0 +1,11 @@
+type: pages
+headline: Gallery
+size: tiny
+info: "{{ page.images.count }} image(s)"
+layout: cards
+template: album
+empty: No Paths Yet
+image:
+  query: page.cover
+  cover: true
+  ratio: 5/4

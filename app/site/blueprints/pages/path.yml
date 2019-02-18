@@ -1,0 +1,56 @@
+title: Path
+tabs:
+
+  
+  Path:
+    label: Path
+    preset: page
+    pages: false
+    fields:
+      paths:
+        label: Path
+        type: structure
+        columns:
+            image:
+                width: 1/4
+            commentImage:
+                width: 1/1
+            commentText:
+                width: 1/1
+        fields:
+          imageSettings:
+            label: Image Choice
+            type: headline
+            numbered: false
+          imageSettingsInfo:
+            label: Image Choice
+            type: info
+            text: Choose the image you wish to comment.
+          image:
+             type: files
+             layout: list
+             multiple: false
+             query: site.find('works', 'exhibitions').children.images
+             text: "{{ file.parent.title }} / {{ file.filename }}"
+             width: 1/2
+          commentImage:
+            label: Image Comment
+            type: textarea
+            width: 1/2
+          pageSettings:
+            label: Page Text
+            type: headline
+            numbered: false
+          pageSettingsInfo:
+            label: Text Choice
+            type: info
+            text: OR choose the page text you wish to comment on.
+          pageText:
+            label: Page Text
+            type: pages
+            multiple: false
+            width: 1/2
+          commentText:
+            label: Page Text Comment
+            type: textarea
+            width: 1/2

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Suisse Int';
+  line-height: 1.35em;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}

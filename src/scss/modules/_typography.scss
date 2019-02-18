@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'corporate_monoregular';
+    src: url('../fonts/corporate_mono_regular-webfont.woff2') format('woff2'),
+         url('../fonts/corporate_mono_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Suisse Int';
+  src: url("../fonts/SuisseIntl-Regular.eot");
+  src: url("../fonts/SuisseIntl-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SuisseIntl-Regular.woff") format("woff"), url("../fonts/SuisseIntl-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Int';
+  src: url("../fonts/SuisseIntl-Italic.eot");
+  src: url("../fonts/SuisseIntl-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SuisseIntl-Italic.woff") format("woff"), url("../fonts/SuisseIntl-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-family: 'corporate_monoregular';
+  font-size: 0.8em;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+.project-title {
+	text-transform: uppercase;
+	margin-bottom: 2em;
+}
